@@ -1,0 +1,139 @@
+    body, html {
+        height : 100%;
+        margin : 0;
+        flex-wrap : wrap;
+    }
+    p,h2{
+        margin : 0;
+    }
+
+    .hero-section {
+        background : linear-gradient(to right, rgb(236, 19, 19) , rgb(99, 41, 41));
+        height : 100vh;
+        font-family : Impact;
+        color : white;
+        display : flex;
+        align-items : center;
+    }
+    .text-container {
+        letter-spacing : 6px;
+        z-index : 3;
+        padding : 7rem;
+    }
+    .title {
+        font-size : 8.5rem;
+    }
+    .slogan-burger{
+        font-size : 2.5rem;
+        font-weight : bold;
+        word-break : normal;
+        width : 100%;
+        white-space : nowrap;
+    }
+    .burger {
+        z-index : 2;
+        position : relative;
+        right : 20%;
+        height : 56rem;
+    }
+    .oignon {
+        display : flex;
+        z-index : 1;
+    }
+    .oignon-gauche {
+        position : relative;
+        bottom : 41.5%;
+        right : 50%;
+        height : 16rem;
+        transform : rotate(120deg);
+    }
+    .oignon-droit {
+        height : 22rem;
+        transform : rotate(20deg);
+        position : relative;
+        right : 41%;
+        top : 31%;
+    }
+    .map-section {
+        background : rgb(230, 126, 8);
+        height : 100vh;
+        font-family : Impact;
+        color : white;
+        align-items : center;
+        justify-content: space-between;
+        display : flex;
+        flex-direction : column;
+    }
+    .text-container-map {
+        z-index : 2;
+        letter-spacing : 6px;
+        text-align : center;
+        display : block;
+        line-height : 0.2rem;
+        padding : 2rem;
+    }
+    .slogan-map {
+        font-size : 2.5rem;
+        font-weight : bold;
+        padding : 2rem;
+    }
+    .map-text {
+        font-size : 5rem;
+        text-align : center;
+        padding : 4rem;
+    }
+    .google-map {
+        display : block;
+        width : 55rem;
+        height : 80rem;
+        z-index : 2;
+    }
+    .flex-logos {
+        z-index : 2;
+        gap : 0px 50px;
+        display : flex;
+        justify-content : center;
+        align-items : flex-start;
+        padding : 2rem;
+    }
+    .insta {
+        width : 5rem;
+        height : 5rem;
+    }
+    .snap {
+        width : 5rem;
+        height : 5rem;
+    }
+    .tiktok {
+        width : 5rem;
+        height : 5rem;
+    }
+    .about-section {
+        background : rgb(255, 233, 172);
+        height : 60vh;
+        font-family : Impact;
+        color : rgb(51, 47, 47);
+        display : flex;
+        justify-content : space-between;
+        align-items : flex-start;
+        padding : 5rem;
+    
+    }
+    .text-fin-left{
+        font-size : 5.5rem;
+        width : 28%;
+        word-wrap : break-word;
+        overflow : break-word;
+    }
+    .title-fin {
+        font-size : 8.3rem;
+        width : 32%;
+        word-wrap : break-word;
+        overflow : break-word;
+    }
+    .text-fin-right{
+        font-size : 5.5rem;
+        width : 28%;
+        word-wrap : break-word;
+        overflow : break-word;
+    }
