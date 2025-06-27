@@ -1,6 +1,7 @@
     body, html {
         height : 100%;
         margin : 0;
+        flex-direction:column;
     }
     p,h2{
         margin : 0;
@@ -10,10 +11,11 @@
     }
     .hero-section {
         background : linear-gradient(to right, rgb(236, 19, 19) , rgb(99, 41, 41));
-        height : 100vh;
+        min-height : 100vh;
         font-family : Impact;
         color : white;
         display : flex;
+        flex-wrap: wrap;
         align-items : center;
         padding : 4rem;
     }
@@ -53,7 +55,7 @@
         font-family : Impact;
         color : white;
 
-        height : 100vh;
+        min-height : 100vh;
 
         display : flex;
         
@@ -98,7 +100,7 @@
     }
     .about-section {
         background : rgb(255, 233, 172);
-        height : 60vh;
+        min-height : 60vh;
         font-family : Impact;
         color : rgb(51, 47, 47);
         display : flex;
