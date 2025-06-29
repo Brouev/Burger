@@ -21,7 +21,6 @@
         position: relative;
 
     }
-
     .text-container {
         letter-spacing : 6px;
         z-index: 2;
@@ -118,8 +117,6 @@
         transform: rotate(130deg);
     }
     .text-container {
-        order: 1;
-        flex-basis: 100%;
         position: relative;
         text-align: center;
     }
@@ -131,7 +128,6 @@
         font-weight: 900;
     }
     .burger {
-        order: 2;
         width: 100%;
         margin: 2rem auto 0 auto;
         position: relative;
