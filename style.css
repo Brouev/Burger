@@ -1,7 +1,6 @@
     body, html {
         height : 100%;
         margin : 0;
-        flex-direction:column;
     }
     p,h2{
         margin : 0;
@@ -19,16 +18,13 @@
         padding : 4rem;
         white-space: nowrap;
         flex-wrap: nowrap;
+        position: relative;
 
     }
-    @media screen and (min-width: 480px){
-        .hero-section{
-            flex-wrap: wrap;
-        }
-    }
+
     .text-container {
         letter-spacing : 6px;
-        z-index:2;
+        z-index: 2;
     }
     .title {
         font-size : 8.5rem;
@@ -41,7 +37,7 @@
         white-space : nowrap;
     }
     .burger{
-        z-index:2;
+        z-index: 2;
     }
     .oignon-gauche {
         position : absolute;
@@ -61,14 +57,10 @@
         background : rgb(230, 126, 8);
         font-family : Impact;
         color : white;
-
         min-height : 100vh;
-
         display : flex;
-        
         align-items : center;
         justify-content: space-between;
-        
         flex-direction : column;
     }
     .text-container-map {
@@ -93,15 +85,7 @@
         justify-content : center;
         align-items : flex-start;
     }
-    .insta {
-        width : 8rem;
-        height : 8rem;
-    }
-    .snap {
-        width : 8rem;
-        height : 8rem;
-    }
-    .tiktok {
+    .insta, .snap, .tiktok {
         width : 8rem;
         height : 8rem;
     }
@@ -114,23 +98,91 @@
         justify-content : space-between;
         align-items : flex-start;
         padding : 5rem;
-    
     }
-    .text-fin-left{
+    .text-fin-left, .title-fin, .text-fin-right {
         font-size : 5.5rem;
         width : 28%;
         word-wrap : break-word;
-        overflow : break-word;
+    }
+@media (max-width: 768px) {
+    .hero-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .oignon-gauche {
+        position : absolute;
+        width: 17%;
+        top: 0%;
+        left: 5%;
+        transform: rotate(130deg);
+    }
+    .text-container {
+        order: 1;
+        flex-basis: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .slogan-burger {
+        font-size: 0.6rem;
+        font-weight: 900;
+    }
+    .burger {
+        order: 2;
+        width: 100%;
+        margin: 2rem auto 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .oignon-droit {
+        position : absolute;
+        width: 23%;
+        right : 16%;
+        top: 85%;
+        transform : rotate(20deg);
+    }
+    .map-section {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    .slogan-map {
+        font-size: 1.8rem;
+    }
+    .map-text {
+        font-size: 3rem;
+    }
+    .google-map {
+        width: 90vw;
+        max-width: 35rem;
+        height: 20rem;
+        margin: 1rem auto;
+        display: block;
+    }
+    .flex-logos {
+        gap: 0 30px;
+    }
+    .insta, .snap, .tiktok {
+        width: 5rem;
+        height: 5rem;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        align-items: center;
     }
     .title-fin {
-        font-size : 8.3rem;
-        width : 32%;
-        word-wrap : break-word;
-        overflow : break-word;
+        font-size: 4rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
     }
-    .text-fin-right{
-        font-size : 5.5rem;
-        width : 28%;
-        word-wrap : break-word;
-        overflow : break-word;
+    .text-fin-left, .text-fin-right {
+        font-size: 2.5rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
     }
+}
